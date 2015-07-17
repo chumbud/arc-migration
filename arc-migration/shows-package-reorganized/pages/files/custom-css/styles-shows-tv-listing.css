@@ -1,0 +1,28 @@
+
+/* embedded style sheet from christa's proto */
+
+#dropdown-menu_btn { min-width: 170px; }
+
+.date-today { margin: 20px 0 30px; }
+#schedule-accordian {padding-top: 0; float: left; width: 100%; display: block;}
+#schedule-accordian .list-item {float: left; width: 100%; display: block; min-height: 45px; padding: 15px 0; }
+#schedule-accordian .list-item:nth-child(even) { background: none repeat scroll 0 0 #e5e5e5; }
+#schedule-accordian .list-item:nth-child(odd) { background: none repeat scroll 0 0 #f1f1f1; }
+#schedule-accordian .list-item .container .row > div { display: inline-block;}
+
+#schedule-accordian .list-item .btn { margin-right: 20px; margin-top: 7px; }
+#schedule-accordian .list-item .time { font-weight: 400; margin-top: 8px;}
+
+#schedule-accordian .accordian-trigger { padding-top: 15px; }
+#schedule-accordian .accordian-trigger [class*="icon-"] { font-size: 2.3rem; }
+
+.show-header { max-height: 435px; margin-bottom: 10px; background-color: #333; color: white;}
+.label {background-color:black; padding-bottom:10px; vertical-align:middle; margin-top:50px;}
+.show-title {font-size:2em; font-weight:800; margin-bottom:50px; margin-top:-5px;}
+
+@media (max-width: 659px) {
+	.date-today { margin: 10px 0 20px; }
+
+	#schedule-accordian .list-item .headline-l { font-size: 2.0rem; }
+	#schedule-accordian .list-item .time { margin-top: 0; }
+}

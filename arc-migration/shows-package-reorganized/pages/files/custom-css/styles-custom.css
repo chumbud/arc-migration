@@ -1,0 +1,368 @@
+
+
+/* general styles
+------------------------------------------------------------------------------------------------------------------------ */
+
+body {
+	background-color: #f4f4f4;
+	color: #222;
+	font-size: 1.8rem;
+}
+
+a {
+	color: #222;
+}
+
+a:hover {
+	color: #6e00af;
+}
+
+footer {
+	margin: 0;
+}
+
+
+
+/* navbar fonts
+------------------------------------------------------------------------------------------------------------------------ */
+
+.navbar {
+	font-family: "VH1ReplicaTT", Helvetica, Arial, sans-serif;
+}
+/* NOTE: VH1ReplicaTT should only exist in the navbar; 
+all HTML type beneath the navbar, on every page, should now be Proxima */
+
+
+
+/* navbar background
+------------------------------------------------------------------------------------------------------------------------ */
+
+.navbar, .navbar-inner .container #nav-top .nav-collapse .nav { 
+	background-color: #6e00af; 
+}
+
+.navbar #ad-container {
+    background-color: rgba(0,0,0,1);
+}
+
+
+
+/* misc navbar elements — sizing, padding and vertical centering
+------------------------------------------------------------------------------------------------------------------------ */
+
+.navbar-inner .container #nav-top .brand a {
+	padding: 0 5px 0 0;
+}
+
+.navbar-inner .container #nav-top .brand a span{
+	font-size: 6rem;
+	margin-top: 0;
+	line-height: 5rem;
+}
+
+.navbar-inner .container #nav-top .title {
+	font-size: 2.2rem;
+	line-height: 2.45;
+}
+
+#nav-top .icon-chevron-down {
+	font-size: 2rem;
+}
+
+@media (max-width: 979px){
+	.navbar-inner .container #nav-top .title {
+		margin-left: 108px;
+	}
+}
+
+@media (max-width: 659px){
+	.navbar-inner .container #nav-top .title {
+		display: table-cell;
+		max-width: 180px;
+		font-size: 2rem;
+		line-height: 1;
+	}
+}
+
+
+
+/* hero tune-in label
+------------------------------------------------------------------------------------------------------------------------ */
+
+/* 
+
+- problem with this area 
+- for some reason changing this div screws everything else up in this style sheet
+- styled directly within the page for now 
+- possibly fix later 
+
+*/
+
+
+
+/* hero cta chevron
+------------------------------------------------------------------------------------------------------------------------ */
+
+.hp-content .tune-in .btn [class*="icon-"]{
+	background: none;
+	border-radius: none;
+	color: #fff;
+	display: inline-table;
+	margin-left: 0 ;
+	vertical-align: middle;
+	padding: 0;
+	text-shadow: none;
+	text-align: center;
+	font-size: 72%;
+	line-height: .4;
+}
+
+@media (max-width: 659px) {
+	.hp-content .tune-in .btn-cta {
+			font-size: 5.5vw;
+		}
+}
+
+
+
+/* background color and padding above main content section
+------------------------------------------------------------------------------------------------------------------------ */
+
+#content {
+	padding-top: 20px;
+	background: #f4f4f4;
+}
+
+@media (max-width: 979px){
+	#content {
+		padding-top: 15px;
+	}
+}
+
+
+
+/* meta-wrap labels — padding adjustment to center text within labels, label hover state
+------------------------------------------------------------------------------------------------------------------------ */
+
+.item .meta-wrap .label {
+	font-size: 1.6rem;
+	padding: 0.5rem 0.7rem 0.2rem;
+	position: absolute;
+	line-height: 1.0;
+	height: 2.6rem;
+	margin-top: -3.1rem; /* = .meta-wrap { padding-top } + .label { height } */
+}
+
+a.label:hover {
+	background-color: #6e00af;
+	color: #fff;
+}
+
+@media (max-width: 659px) {
+	.item .meta-wrap .label { margin-top: 0; margin-bottom: .5rem; position: relative; }
+	.item.video-block.full-ep .media { background-color: #f2f2f2; padding-left: 0; }
+	.item .media {
+		margin-top: 4px;
+	}
+}
+
+
+
+/* item flags
+------------------------------------------------------------------------------------------------------------------------ */
+
+.item .flag {
+    position: absolute;
+	z-index: 3;
+	background-color: #48c0dd;
+	top: -5px;
+	left: -5px;
+	text-align: center;
+	color: #FFF;
+	letter-spacing: -0.01em;
+}
+
+a:hover .item .flag {
+    color: #fff;
+}
+
+
+
+/* button — icon sizing, vertical text centering
+------------------------------------------------------------------------------------------------------------------------ */
+
+[class*="btn-"] [class*="icon-"] {
+	font-size: 0.8em;
+}
+
+.btn > span {
+	padding-bottom: 0;
+	padding-top: 0.2em;
+}
+
+
+/* item meta header — hover states
+------------------------------------------------------------------------------------------------------------------------ */
+
+.item:hover .meta-wrap .header, .item:hover .meta-wrap .sub-header {
+	color: #6e00af;
+}
+
+
+
+/* item meta header — removing white background from tablet breakpoint
+------------------------------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 979px) {
+	#basic-promos .meta-wrap {
+		background-color: #f4f4f4;
+		padding: 5px;
+	}
+
+	#basic-promos .meta-wrap .label {
+		margin-left: 0;
+	}
+
+	#basic-promos .meta-wrap .header {
+		padding: 5px 0 0 0;
+	}
+}
+
+@media (max-width: 659px) {
+	#basic-promos .meta-wrap .label {
+		margin-left: -5px;
+	}
+}
+
+
+
+/* white dividing lines between items (for mobile only)
+------------------------------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 659px) {
+	.video-block {
+		padding-top: 2rem;
+		border-top: 3px solid #fff;
+	}
+
+	.item .flag {
+		margin-top: 2rem;
+	}
+
+}
+
+
+
+/* section  headers
+------------------------------------------------------------------------------------------------------------------------ */
+
+/* main blue font color for section headers */
+[class*="section-header"] {
+	color: #48c0dd; 
+}
+
+/* "emphasis" section headers with white text/blue backgrounds */
+span.section-header-emphasis {
+	background: #48c0dd;
+	display: inline-block;
+	color: #fff;
+	padding: .8rem 1.2rem .5rem;
+	font-size: 2rem;
+	letter-spacing: 0;
+}
+
+
+
+/* related shows area background pattern
+------------------------------------------------------------------------------------------------------------------------ */
+
+#related-shows {
+	border-top: 5px solid #e6e6e6;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEhJREFUeNqEz0EKACAIRNFy5f0P6tplBkJYOTNLeXxwmtmoc/frIlSoqlBRSp04CIhEWGxExee7V0RFqCilThwERCIsYkuAAQD37SbKR+l/4gAAAABJRU5ErkJggg==);
+	background-repeat:repeat
+}
+
+
+
+/* dropdown menu styles
+------------------------------------------------------------------------------------------------------------------------ */
+
+.dropdown-menu_container {
+	margin-top: 30px;
+	margin-bottom: 18px;
+}
+
+#dropdown-menu_btn { 
+	background-color: #1a1a1a; 
+	border-radius: 3px; 
+	display: table-cell; 
+	min-height: 45px; 
+	padding: 8px 13px 11px; 
+	vertical-align: middle; 
+	font-size: 2rem; 
+	line-height:1.15; 
+}
+
+#dropdown-menu_btn, #dropdown-menu_menu {
+	text-transform: uppercase;
+}
+
+#dropdown-menu_menu { 
+	display: none; 
+	position: absolute; 
+	z-index: 5; 
+	margin-top: -2px; 
+	width: 100%; 
+	background-color: #000;
+}
+
+#dropdown-menu_menu ul { 
+	display: inline-block; 
+	background-color: rgba(255,255,255,0.0); 
+	width: 100%; 
+	min-width: 180px; 
+	margin-bottom: 0;
+}
+
+#dropdown-menu_menu ul li a { 
+	display: block; 
+	font-size: 1.7rem;
+	letter-spacing: .05rem; 
+	font-weight: 400; 
+	line-height: 1; 
+	padding: 10px;
+}
+
+.menu-alt ul li a {
+	padding: 15px 10px 13px !important;
+}
+
+#dropdown-menu_menu ul li a:hover { 
+	border-left: 0; 
+	color: #fff;
+	background: rgba(255,255,255,.2);
+}
+
+a#dropdown-menu_btn:hover {
+	color: #fff;
+	background: #222;
+}
+
+.latest-full-episodes { 
+	margin-top: -17px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+
+/* embedded style sheet from christa's proto */
+
+#brand { background-color: #333; margin-bottom: 15px;}
+#brand header { color: #fff; text-align: left; margin: 30px 0 45px; text-transform: lowercase; }
+#brand header p { margin-top: 5px; }
+
+.navbar {background-color: #232323; text-transform: lowercase; }
+.navbar-inner .container #nav-top .title { margin-top: 3px; }
+
