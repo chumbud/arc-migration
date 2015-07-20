@@ -2,9 +2,13 @@
 /* embedded style sheet from christa's proto */
 
 #brand { background-color: #333; margin-bottom: 15px;}
-#brand header { color: #fff; text-align: left; margin: 30px 0 45px; text-transform: lowercase; }
+/*//pj// changes: text-transform changed to capitalize franchise title(#brand header) and show title(.item .meta-wrap .header)*/
+#brand header { color: #fff; text-align: left; margin: 30px 0 45px; text-transform: capitalize; }
 #brand header p { margin-top: 5px; }
 
-.navbar {background-color: #232323; text-transform: lowercase; }
+.navbar {background-color: #232323; }
 .navbar-inner .container #nav-top .title { margin-top: 3px; }
 
+.item .meta-wrap .header {
+    text-transform: capitalize;
+}

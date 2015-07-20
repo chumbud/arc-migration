@@ -7,4 +7,3 @@ checkout cc show listing
 red dropdown to black
 mailbutton black
 spacing on footer
- 
