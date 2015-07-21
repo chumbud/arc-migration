@@ -1,30 +1,4 @@
-/* this style sheet mainly changes the way the thumbnails and flags appear on mobile */
-
-.navbar, .navbar-inner .container #nav-top .nav-collapse .nav { background-color: #232323; }
-
-#content { padding-top: 30px; }
-.latest-full-episodes { margin-top: 30px; }
-
-.item:hover .meta-wrap .header, .item:hover .meta-wrap .sub-header { color: #00bbef; }
-.section-header-1 {
-	color: #e62970;
-}
-
-#related-shows .item {
-	font-size: 1.6rem;
-}
-#related-shows .meta-wrap .header {
-	font-weight: 600;
-}
-
-footer { margin-top: 0; }
-
-@media (max-width: 659px) {
-	.item .meta-wrap .label { margin-top: 0; position: relative; }
-	.item.video-block.full-ep .media { background-color: #f2f2f2; padding-left: 0; }
-}
-
-
+/*//pj//pasting in altered button code from styles-hub-full-episodes.css*/
 .dropdown-menu_container {
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -46,6 +20,7 @@ footer { margin-top: 0; }
 	vertical-align: middle;
 	font-size: 2.3rem;
 	line-height:1.15;
+	color: white;
 }
 
 #dropdown-menu_btn > div {
@@ -74,13 +49,14 @@ footer { margin-top: 0; }
 	margin-top: -2px;
 	width: 100%;
 	background-color: #1a1a1a;
+	color: white;
 }
 
 #dropdown-menu_menu ul {
 	display: inline-block;
 	background-color: rgba(255,255,255,0.1);
 	width: 100%;
-	min-width: 180px;
+	min-width: 120px;
 	margin-bottom: 0;
 }
 
@@ -89,6 +65,7 @@ footer { margin-top: 0; }
 	font-weight: 400;
 	line-height: 1;
 	padding: 10px;
+	color: white;
 }
 
 #dropdown-menu_menu ul li a:hover {
@@ -96,11 +73,10 @@ footer { margin-top: 0; }
 	color: #00bbef;
 }
 
-/*#dropdown-menu_menu ul li a:hover div:first-child { border-left: 5px solid #00bbef; color: #00bbef; margin-left:-10px; padding-left: 10px; }*/
-
 #dropdown-menu_menu ul li small {
 	font-size: 0.65em;
 	color: #aaa;
 	letter-spacing: 0.04em;
 	font-weight: 200;
 }
+/*end addition*/

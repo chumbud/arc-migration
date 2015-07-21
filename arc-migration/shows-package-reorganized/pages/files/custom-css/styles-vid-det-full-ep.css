@@ -14,9 +14,33 @@
 .btn-mail { width: 45px; }
 .btn-mail > span { padding-left: 10px; }
 
+/*//pj// mail style*/
+.btn-mail {
+	background-color: black;
+	width: 60px;
+	position: absolute;
+	color: black;
+}
+
+.btn-social:last-child {
+	margin-left: 4px;
+	background: #262626;
+	font-size: 30px;
+	border-bottom-color: black;
+}
+
+.postcard-right-wrap .header {
+	text-transform: uppercase;
+}
+.sub-header {
+	text-transform: capitalize;
+}
+
 #player-meta  { line-height: 1.2; }
-#player-meta .header { font-size: 2.8rem; font-weight: 900; letter-spacing: 0.006em; text-transform: lowercase; }
-#player-meta .sub-header { font-size: 2.4rem; line-height: 1.1; font-weight: 700; letter-spacing: 0.006em;  text-transform: lowercase; margin-top: 0.1em; }
+/*//pj// text-transform*/
+#player-meta .header { font-size: 2.8rem; font-weight: 900; letter-spacing: 0.006em; text-transform: capitalize; }
+/*//pj// text-transform*/
+#player-meta .sub-header { font-size: 2.4rem; line-height: 1.1; font-weight: 700; letter-spacing: 0.006em;  text-transform: capitalize; margin-top: 0.1em; }
 #player-meta .meta { font-size: 1.4rem; margin-top: 10px; }
 #player-meta .player-sharing { margin: 17px 0 0; }
 #player-meta .deck { max-width: 85%; opacity: 0.85; }
@@ -37,21 +61,21 @@ footer { margin-top: 0; }
 
 @media (max-width: 979px ) {
 	#player-meta .deck { max-width: 100%; }
-	
+
 }
 
 @media (max-width: 659px ) {
-	
+
 	#player-stage { padding-bottom: 0;}
 	.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap { margin-bottom: 0; }
 	#player-meta .postcard-right-wrap { display: flex; flex-direction: column; }
 	#player-meta .postcard-right-wrap > div:first-child { order: 2; margin-top: 5px; float: left; margin-left: 0; }
 	#player-meta .postcard-right-wrap > div:last-child { order: 1; float: none; width: 100%; margin-bottom: 15px;  }
 	#tve-auth-info {  text-align: left; padding-top: 15px; border-top: 1px solid #1a1a1a;  }
-	
+
 	#player-meta .postcard-right-wrap > div:first-child { max-width: 100%; }
-	
-	#ad { 
+
+	#ad {
 		background-color: rgba(0, 0, 0, 0.15);
 		margin-bottom: 0;
 		margin-left: -10px;
@@ -60,6 +84,6 @@ footer { margin-top: 0; }
 		text-align: center;
 	}
 	.item.video-block.full-ep .media { width: 33.33%; }
-	
+
 	.btn > span, .btn-cta > span { font-size: inherit; }
 }
